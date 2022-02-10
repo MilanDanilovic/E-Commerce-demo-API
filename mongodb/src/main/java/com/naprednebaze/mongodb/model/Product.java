@@ -3,7 +3,9 @@ package com.naprednebaze.mongodb.model;
 import com.naprednebaze.mongodb.model.Enumerations.Discount;
 import com.naprednebaze.mongodb.model.Enumerations.FlagNew;
 import com.naprednebaze.mongodb.model.Enumerations.ProductType;
+import lombok.Data;
 
+@Data
 public class Product {
     private String name;
     private String imageURL1;

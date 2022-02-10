@@ -1,9 +1,11 @@
 package com.naprednebaze.mongodb.model;
 
 import com.naprednebaze.mongodb.model.Enumerations.Role;
+import lombok.Data;
 
 import java.util.List;
 
+@Data
 public class User {
     private String firstName;
     private String lastName;
