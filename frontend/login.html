@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="assets/img/bg/makeup.jpg">
+    <link rel="stylesheet" href="assets/customcss/general.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.0.0-web/css/all.css">
+</head>
+<body class="bg-gradient-light" style="background-image:url(/assets/img/bg/bg7.jfif)">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#">JANE LINE</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li title="Home" class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house" style="font-size:24px;"></i></a></li>
+                    <li title = "Login" class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt active" style="font-size:24px;"></i></a></li>
+                    <li title = "Register" class="nav-item"><a class="nav-link" href="registration.html"><i class="fas fa-user-plus" style="font-size:24px;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-12 col-xl-10 mt-5">
+                <div class="card shadow-lg o-hidden border-0 my-5">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-flex">
+                                <div class="flex-grow-1 bg-login-image"
+                                    style="background-image:url(/assets/img/bg/bg11.jfif)"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h4 class="text-dark mb-4">Welcome back!</h4>
+                                    </div>
+                                    <form class="user needs-validation" id = "logForm" novalidate>
+                                        <div class="form-group"><input class="form-control form-control-user "
+                                                type="username" id="exampleInputUsername" aria-describedby="emailHelp"
+                                                placeholder="Username" name="username" required>
+                                            
+                                        </div>
+                                        <div class="form-group"><input
+                                                class="form-control form-control-user" type="password"
+                                                id="exampleInputPassword" placeholder="Password" name="password" required>
+                                            <div class="invalid-feedback infbpass">Wrong password!</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox small"></div>
+
+                                            <button class="btn btn-primary btn-block text-white btn-user"
+                                                type="submit"><i class="fas fa-user"></i>&nbsp; Log in</button>
+                                            <hr><a
+                                                class="btn btn-primary btn-block text-white btn-primary btn-user"
+                                                method="post" action="CheckEmail" role="button"
+                                                type="submit" href="registration.html"><i class="fas fa-user-plus"></i>&nbsp; Sing up</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootbox.min.js"></script>
+    <script src="assets/js/login.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+.active{
+    padding-bottom: 2px;
+    border-bottom: 3px solid red;
+    color: lightcoral;
+}
+
+.product_sbag_list{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 20px;
+   
+}
+.sum {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+    min-height: 100%;
+}
+
+.product{
+    margin: 20px;
+}
+
+.ko{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}

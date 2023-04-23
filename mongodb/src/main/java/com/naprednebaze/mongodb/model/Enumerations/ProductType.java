@@ -2,12 +2,13 @@ package com.naprednebaze.mongodb.model.Enumerations;
 
 public enum ProductType {
 
-    MAKEUP("MAKEUP"),
-    SKINCARE("SKINCARE"),
-    HAIR("HAIR"),
-    FRAGRANCE("FRAGRANCE"),
-    BATH("BATH"),
-    TOOLS("TOOLS");
+    EYES("EYES"),
+    FACE("FACE"),
+    CHEEKS("CHEEKS"),
+    BROWS("BROWS"),
+    LIPS("LIPS"),
+    SETS("SETS"),
+    NAILS("NAILS");
 
     private final String type;
 

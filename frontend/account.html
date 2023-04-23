@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Account - Jane Line</title>
+   
+   
+    <link rel="stylesheet" href="assets/customcss/general.css">
+    <link rel="icon" href="assets/img/bg/makeup.jpg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="assets/customcss/profile.css">
+    
+</head>
+
+<body >
+    
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="">JANE LINE</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li title="Home" class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house" style="font-size:24px;"></i></a></li>
+                    <li title = "Account" class="nav-item"><a class="nav-link" href="account.html"><i class="fa-regular fa-user active" style="font-size:24px;"></i></a></li>
+                    <li title="Wishlist" class="nav-item"> <a class="nav-link" href="whishlist.html"><i class = "fa-regular fa-heart" style="font-size:24px;"></i></a></li>
+                    <li title="Shopig Bag" class="nav-item"><a class="nav-link" href="shopping-cart.html"><i class = "fa-solid fa-bag-shopping" style="font-size:24px;"></i></a></li>
+                    <li title = "Log Out" class="nav-item logged"><a class="nav-link" href=""><i class="fas fa-sign-out-alt" style="font-size:24px;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page shopping-cart-page">
+        <section class="clean-block clean-cart dark" style="background-image:url(/assets/img/bg/bg7.jfif);background-size:cover">
+            <div class="container" >
+                <div class="block-heading pt-3 mb-3">
+                    <h2 class="text-dark newfont">Account Owerview</h2>
+                    <h6 class="text-dark">Your informations are safe with us...<i class="fas fa-heart"></i></h6>
+                </div>
+                <div class="">
+                    <div class="row g-0">
+                        <div class="col-md-12 col-lg-4" align="center">
+                            <a class="custom-button newfont text-dark" style="background-color:#ccccff;" href="whishlist.html">
+                                Whishlist
+                            </a>
+                            <a class="custom-button newfont text-dark" href="shopping-cart.html">
+                                Shopping bag
+                            </a>
+                            <a class="custom-button newfont text-dark" style="background-color:#ffff66;" href="purchased.html">
+                                Purchased
+                            </a>
+
+                        </div>
+                        <div class="col-md-12 col-lg-8 userinfo costomal">
+                            <div class="text-center">
+                                <img id="my-avatar" class="rounded-circle mb-3 mt-4" src="assets/img/avatars/avatar4.png" width="160" height="160">
+                            </div>
+                            <div class="text-center">
+                                <label class="custom-name newfont text-dark col-sm-12 col-md-6" style="background-color:#F17921;" id="name">
+                                Andjela Kostic
+                                </label>
+                            </div> 
+                            <div class="text-center mb-3">
+                                <label class="form-label" for="username" id="username">@username</label>
+                            </div>
+                            <div class="text-center mb-3">
+                                <label class="form-label" for="email" id="email">user@example.com</label>
+                            </div>
+                            <div class="text-center mb-3">
+                                <button id="izmeni-profil-btn" class="btn btn-outline-dark btn-md" type="button">Change profile &nbsp;<i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="text-center mb-3">
+                                <button id="promeni-sifru-btn" class="btn btn-outline-dark btn-md" type="button">Change password &nbsp;<i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="card-body hidden-edit-profile" id="izmeni-profil" style="display: none;">
+                                <form id="">
+                                    <div class="row colonsmal" >
+                                        <div class="col-md-4 col-lg-4 m-w-300">
+                                            <div class="" id="ime-label">
+                                                <label class="form-label" for="first_name">First name<br></label>
+                                                <input class="form-control" type="text" id="first_name" placeholder="..." name="first_name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-4 m-w-300">
+                                            <div class="" id="prezime-label">
+                                                <label class="form-label" for="last_name">Last name<br></label>
+                                                <input class="form-control" type="text" id="last_name" placeholder="..." name="last_name"></div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-4 d-flex align-items-end m-w-300">
+                                            <button class="btn btn-outline-dark btn-sm" style="height:38px;margin-right:5px;margin-top:5px" id= "potvrdiPromenuIP"> OK <i class="fas fa-check"></i>
+                                            </button>
+                                            <button id="cancel-izmeni-profil" class="btn btn-outline-dark btn-sm " style="height:38px;margin-top:5px"><i class="fas fa-times"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-body hidden-edit-pass" id="promeni-sifru" style="display: none;">
+                                <!-- <form id=""> -->
+                                    <div class="row colonsmal">
+                                        <div class="col-md-4 col-lg-4 m-w-300">
+                                            <div class="mb-3" id="label-stara-sifra">
+                                                <label class="form-label" for="pasword">
+                                                    Old password<br>
+                                                </label>
+                                                <input type="pasword" class="form-control" type="text" id="oldpassword" placeholder="..." name="oldpassword" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-4 m-w-300">
+                                            <div class="mb-3" id="label-nova-sifra">
+                                                <label class="form-label" for="first_name">
+                                                    New password<br>
+                                                </label>
+                                                <input class="form-control" type="text" id="newPassword" placeholder="..." name="newPassword">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-4 col-lg-4 m-w-300">
+                                            <div class="mb-3" id="label-ponovi-sifru">
+                                                <label class="form-label" for="first_name">
+                                                    Repeate password<br>
+                                                </label>
+                                                <input class="form-control" type="text" id="repeatPassword" placeholder="..." name="repeatPassword">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 m-w-300">
+                                            <button class="btn btn-outline-dark btn-sm" id="potvrdiPromenuSifre">Change password</button> 
+                                            <button id="cancel-promeni-sifru" class="btn btn-outline-dark btn-sm" type="button"><i class="fas fa-times"></i></button>
+                                        </div>
+                                    </div>
+
+                                    
+                                <!-- </form> -->
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+   
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/general.js"></script>
+    <script src="assets/js/profile.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

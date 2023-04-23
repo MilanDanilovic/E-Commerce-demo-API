@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Account - Jane Line</title>
+    <link rel="icon" href="assets/img/bg/bg1.jpg">
+    <link rel="stylesheet" href="assets/customcss/general.css">
+    <link rel="icon" href="assets/img/bg/makeup.jpg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="assets/customcss/profile.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href=""><img class= "img-fluid" src="assets/img/bg/jl4.gif"></a><button
+                data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span
+                    class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+
+                    <li title="Log Out" class="nav-item logged"><a class="nav-link" href=""><i class="fas fa-sign-out-alt" style="font-size:24px;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page shopping-cart-page">
+        <section class="clean-block clean-cart dark"
+            style="background-image:url(/assets/img/bg/bc.png);background-size:cover">
+            <div class="container">
+                <div class="block-heading pt-3 mb-3">
+                    <h2 class="text-dark newfont">ADMINISTRATOR</h2>
+
+                </div>
+                <div class="">
+                    <div class="row g-0">
+
+                        <div class="col-md-12 col-lg-8 userinfo costomal">
+                            <div class="text-center">
+                                <img id="my-avatar" class="rounded-circle mb-3 mt-4"
+                                    src="assets/img/avatars/avatar4.png" width="160" height="160">
+                            </div>
+                            <div class="text-center">
+                                <label class="custom-name newfont text-dark col-sm-12 col-md-6"
+                                    style="background-color:#F17921;" id="adname">
+                                    ADMIN
+                                </label>
+                            </div>
+
+                            <div class="text-center mb-3">
+                                <button id="izmeni-profil-btn" class="btn btn-outline-dark btn-md" >Add
+                                    product &nbsp;<i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="text-center mb-3">
+                                <button id="promeni-sifru-btn" class="btn btn-outline-dark btn-md" >Delete
+                                    product &nbsp;<i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                            <div class="card-body hidden-edit-profile" id="izmeni-profil" style="display: none;">
+                                <form id="">
+                                    <div class="colonsmal">
+                                        <div class="col-md-12 col-lg-6 m-w-300">
+                                            <div class="" id="ime-label">
+                                                <label class="form-label" for="first_name">Product name<br></label>
+                                                <input class="form-control" type="text" id="product-name"
+                                                    placeholder="..." name="name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 m-w-300">
+                                            <div class="" id="prezime-label">
+                                                <label class="form-label" for="last_name">Image <br></label>
+                                                <input class="form-control" type="text" id="img1" placeholder="..."
+                                                    name="img1">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 m-w-300">
+                                            <div class="" id="prezime-label">
+                                                <label class="form-label" for="last_name">Image2 <br></label>
+                                                <input class="form-control" type="text" id="img2" placeholder="..."
+                                                    name="img2">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 m-w-300">
+                                            <div class="" id="prezime-label">
+                                                <label class="form-label" for="last_name">Image3 <br></label>
+                                                <input class="form-control" type="text" id="img3" placeholder="..."
+                                                    name="img3">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 m-w-300">
+                                            <div class="" >
+                                                <label class="form-label" for="last_name">Brand <br></label>
+                                                <div id="brand"></div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-md-12 col-lg-6 m-w-300">
+                                            <div class="" id="prezime-label">
+                                                <label class="form-label" for="last_name">Price <br></label>
+                                                <input class="form-control" type="number" id="price" placeholder="..."
+                                                    name="price">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 m-w-300">
+                                            <div class="" id="prezime-label">
+                                                <label class="form-label" for="last_name">Discount <br></label>
+                                                <div id= discount></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 m-w-300">
+                                            <div class="" id="prezime-label">
+                                                <label class="form-label" for="last_name">Description <br></label>
+                                                <input class="form-control" type="text" id="disc" placeholder="..."
+                                                    name="desc">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 m-w-300">
+                                            <div class="" id="prezime-label">
+                                                <label class="form-label" for="last_name">Product Type <br></label>
+                                                <div id="type"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 d-flex align-items-end m-w-300">
+                                            <button class="btn btn-outline-dark btn-sm"
+                                                style="height:38px;margin-right:5px;margin-top:5px"
+                                                id="potvrdiPromenu" >  OK <i class="fas fa-check"></i>
+                                            </button>
+                                            <button id="izmeni" class="btn btn-outline-dark btn-sm "
+                                                style="height:38px;margin-top:5px"><i class="fas fa-times"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-body hidden-edit-pass" id="" style="display: none;">
+                      
+                                <div class="row colonsmal ">
+                                    
+                                    <div class="col-md-4 col-lg-4 m-w-300">
+                                        <div class="mb-3" id="label-nova-sifra">
+                                            <label class="form-label" for="first_name">
+                                                Product name<br>
+                                            </label>
+                                            <input class="form-control" type="text" id="na" placeholder="..."
+                                                name="pname">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-4 m-w-300">
+                                        <div class="mb-3" id="label-ponovi-sifru">
+                                            <label class="form-label" for="first_name">
+                                                Product Type<br>
+                                            </label>
+                                            <input class="form-control" type="text" id="ty"
+                                                placeholder="..." name="ptype">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 m-w-300">
+                                        <button class="btn btn-outline-dark btn-sm" id="dele">Delete product  </button>
+                                        <button id="dele-can" class="btn btn-outline-dark btn-sm"
+                                            ><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+
+
+                                <!-- </form> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/general.js"></script>
+    <script src="assets/js/bootbox.min.js"></script>
+    <script src="assets/js/admin.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

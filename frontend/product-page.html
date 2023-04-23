@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Product - JANE LINE</title>
+    <link rel="stylesheet" href="assets/customcss/produc-list.css">
+    <link rel="icon" href="assets/img/bg/makeup.jpg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.0.0-web/css/all.css">
+    
+</head>
+
+<body >
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#">JANE LINE</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li title="Home" class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house active" style="font-size:24px;"></i></a></li>
+                    <li title = "Account" class="nav-item logged"><a class="nav-link" href="account.html"><i class="fa-regular fa-user" style="font-size:24px;"></i></a></li>
+                    <li title = "Wishlist" class="nav-item logged"> <a class="nav-link" href="whishlist.html"><i class = "fa-regular fa-heart" style="font-size:24px;"></i></a></li>
+                    <li title = "Shopig Bag" class="nav-item logged"><a class="nav-link" href="shopping-cart.html"><i class = "fa-solid fa-bag-shopping" style="font-size:24px;"></i></a></li>
+                    <li title = "Login" class="nav-item visitor"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt" style="font-size:24px;"></i></a></li>
+                    <li title = "Register" class="nav-item visitor"><a class="nav-link" href="registration.html"><i class="fas fa-user-plus" style="font-size:24px;"></i></a></li>
+                    <li title = "Log Out" id="logout" class="nav-item logged"><a class="nav-link" href=""><i class="fas fa-sign-out-alt" style="font-size:24px;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page product-page">
+        <section class="clean-block clean-product dark" style="background-image:url(/assets/img/bg/bg8.jfif);background-size:cover">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-dark">This product is amazing..<i class= "fas fa-heart"></i></h2>
+                    <p>Here you can find all the information about the product. We hope you enjoy it  <i class= "fa-regular fa-smile"></i></p>
+                </div>
+                <div class="block-content rounded bg-light p-2 text-dark bg-opacity-75">
+                    <div class="product-info">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="gallery bg-transparent">
+                                    <div id="product-preview" class="vanilla-zoom">
+                                        <div class="zoomed-image"></div>
+                                        <div class="sidebar">
+                                            <img id="product_img1" class="img-fluid d-block small-preview product_img1">
+                                            <img id="product_img2" class="img-fluid d-block small-preview">
+                                            <img id="product_img3" class="img-fluid d-block small-preview">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info p-5">
+                                    <h3 id = "product_title" style="background-color:#ffcccc;max-width:fit-content;" class="p-2 rounded" >Lorem Ipsum</h3>
+                                    <div class="price">
+                                        <h3 id = "product_price" ></h3>
+                                        <p hidden class="product-old-price" id = "product_price_old"><del></del></p>
+                                        <span hidden id ="discount" style="background-color:red" class="discount p-1 rounded">15% off</span>
+                                        <span hidden id = "new" style="background-color:yellow" class="new p-1 rounded">new</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <ul class="nav nav-tabs" role="tablist" id="myTab">
+                                <li class="nav-item" role="presentation"><a class="nav-link text-dark active" role="tab" data-bs-toggle="tab" id="description-tab" href="#description">Description</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link text-dark" role="tab" data-bs-toggle="tab" id="specifications-tabs" href="#specifications">Specifications</a></li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active description" role="tabpanel" id="description">
+                                    
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <figure class="figure"><img class="img-fluid figure-img product_img1"></figure>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h4>About Product</h4>
+                                            <p id="product_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-7 right">
+                                            <h4>About BRAND</h4>
+                                            <p id="brand_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <figure class="figure"><img class="img-fluid figure-img" id ="brandimg"></figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade specifications" role="tabpanel" id="specifications">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="stat">Brand</td>
+                                                    <td class="stat" id="brand_name"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="stat">Product Type</td>
+                                                    <td class="stat" id="product_type"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="stat">Available</td>
+                                                    <td class="stat" >YES</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clean-related-items text-center m-3 p-3">
+                        <h3>Related Products</h3>
+                        <div class="items">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="clean-related-item rounded">
+                                        <div class="image"><a href="#"><img class="related-img img-fluid d-block mx-auto rounded-circle" src=""></a></div>
+                                        <div class="related-name">
+                                            <a class="related-name-a" ></a>
+                                            <h4 class= "related-price text-dark"></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="clean-related-item rounded">
+                                        <div class="image"><a href="#"><img class="related-img img-fluid d-block mx-auto rounded-circle" src=""></a></div>
+                                        <div class="related-name">
+
+                                            <a class="related-name-a" ></a>
+                                            <h4 class= "related-price text-dark"></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="clean-related-item rounded">
+                                        <div class="image"><a href="#"><img class="related-img img-fluid d-block mx-auto rounded-circle" src=""></a></div>
+                                        <div class="related-name">
+                                            <a class="related-name-a"></a>
+                                            <h4 class= "related-price text-dark"></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li class= "visitor"><a  href="registration.html">Sign up</a></li>
+                        <li class= "visitor"><a class= "visitor" href="login.html">Log in</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#Contact">Contact us</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2022 Copyright Text</p>
+        </div>
+    </footer>
+    
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/general.js"></script>
+    <script src="assets/js/product_page.js"></script>
+    <script src="assets/js/bootbox.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

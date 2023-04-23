@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Register - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="assets/img/bg/makeup.jpg">
+    <link rel="stylesheet" href="assets/customcss/general.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.0.0-web/css/all.css">
+</head>
+
+<body style="background-image:url(/assets/img/bg/bg7.jfif);background-size:cover;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#">JANE LINE</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li title="Home" class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house" style="font-size:24px;"></i></a></li>
+                    <li title = "Login" class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt" style="font-size:24px;"></i></a></li>
+                    <li title = "Register" class="nav-item"><a class="nav-link" href="registration.html"><i class="fas fa-user-plus active" style="font-size:24px;"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page">
+        <div class="container">
+            <div class="card shadow-lg o-hidden border-0 my-5">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-5 d-none d-lg-flex">
+                            <div class="flex-grow-1 bg-register-image"style="background-image:url(/assets/img/bg/bg10.jfif)"></div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h4 class="text-dark mb-4 reglang">Create account <i class="fas fa-user-plus"></i></h4>
+                                </div>
+                                <form class="user needs-validation" novalidate >
+                                    <div class="form-group row ">
+                                        <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user imelang"
+                                                type="text" id="exampleFirstName" placeholder="First name" name="firstname"
+                                                required>
+                                            <div class="valid-feedback"></div>
+                                        </div>
+                                        <div class="col-sm-6"><input class="form-control form-control-user prezimelang" type="text"
+                                                id="exampleLastName" placeholder="Last name" name="lastname" required>
+                                            <div class="valid-feedback"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group"><input class="form-control form-control-user korimelang" type="text" id="exampleUsername"
+                                            placeholder="Username" name="username" required>
+                                            <div class="invalid-feedback infbkorime">Please select a username!
+                                            </div>
+                                    </div>
+                                    <div class="form-group"><input class="form-control form-control-user emaillang" type="email"
+                                            id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email Adresa"
+                                            name="email" required>
+                                        <div class="invalid-feedback infbemail">Please enter a valid email address!</div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user lozinkalang"
+                                                type="password" id="examplePasswordInput" placeholder="Password"
+                                                name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  required>
+                                            <div class="invalid-feedback infbpass">Password must contain at least one numeric character and at least one lowercase letter and one uppercase letter. Length must be 8 or more characters</div>
+                                        </div>
+                                        <div class="col-sm-6"><input class="form-control form-control-user replozinkalang" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                                id="exampleRepeatPasswordInputa" placeholder="Repeat password"
+                                                name="repeatedpassword" required>
+                                            <div class="valid-feedback"></div>
+                                        </div>
+                                    </div><button class="btn btn-primary btn-block text-white btn-user reglangdva"  type="submit"
+                                        >Register</button>                         
+                                </form>   
+                            </div>
+                            <div class="text-center"><a class="small loglang" href="login.html">You already have an account?
+                                    </a></div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootbox.min.js"></script>
+    <script src="assets/js/register.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

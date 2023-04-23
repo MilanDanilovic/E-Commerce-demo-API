@@ -1,0 +1,49 @@
+.newfont{
+    font-family: "Shizuru";
+    src: url('assets/fonts/Shizuru-Regular.ttf') format("truetype");
+    
+}
+
+.custom-button{
+    background-color: #ffb3d9;
+    font-size:30px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    text-decoration: none;
+    margin: 10px;
+    max-width: 300px;
+
+}
+.userinfo{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+}
+.m-w-300{
+    max-width: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .colonsmal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+  }
+.custom-name{
+    font-size:30px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px;
+    height: 60px;
+    max-width: 300px;
+}
+.hidden{
+    display: none;
+}
